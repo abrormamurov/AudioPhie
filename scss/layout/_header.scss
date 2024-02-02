@@ -1,0 +1,47 @@
+.header {
+  background-color: #0e0e0e;
+  padding-top: 3.2rem;
+  padding-bottom: 3.6rem;
+}
+.header__container {
+  @include flex-center;
+}
+
+.site-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+.sitenav {
+  ul {
+    @include flex-center;
+    gap: 3.4rem;
+  }
+
+  a {
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: $tranistions-time;
+    &:hover {
+      color: $dark-orange-color;
+    }
+  }
+}
+.header__basket-btn {
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

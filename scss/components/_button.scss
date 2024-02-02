@@ -1,0 +1,26 @@
+.btn-orange {
+  @include buttons($white-color, $dark-orange-color);
+  text-decoration: none;
+
+  &:hover {
+    @include buttons_hover($white-color, $orange-color);
+  }
+}
+
+.btn-white {
+  @include buttons($black-color, transparent, $black-color);
+  text-decoration: none;
+
+  &:hover {
+    @include buttons_hover($white-color, $black-color);
+  }
+}
+
+.btn-black {
+  @include buttons($white-color, $black-color);
+  text-decoration: none;
+
+  &:hover {
+    @include buttons_hover($black-color, $white-color);
+  }
+}
