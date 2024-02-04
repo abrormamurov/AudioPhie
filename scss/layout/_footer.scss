@@ -69,3 +69,7 @@
   right: 2.4rem;
   margin-top: -10.5rem;
 }
+
+.footer__item-link:hover svg path {
+  fill: $dark-orange-color;
+}
